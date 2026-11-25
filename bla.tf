@@ -122,6 +122,7 @@ resource "aws_ebs_volume" "unencrypted" {
   encrypted         = false # data at rest not encrypted
 }
 
+
 # =========================
 # IaC: CloudTrail logging disabled
 # =========================
