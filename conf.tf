@@ -11,6 +11,7 @@ provider "aws" {
   skip_metadata_api_check     = true
 }
 
+
 # =========================
 # IaC: Public S3 bucket
 # =========================
