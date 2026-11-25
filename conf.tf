@@ -16,5 +16,5 @@ provider "aws" {
 # =========================
 resource "aws_s3_bucket" "public_bucket" {
   bucket = "my-very-insecure-bucket-123456"
-  aws_s3_bucket_acl    = "public-read"
+  acl    = "public-read"
 }
