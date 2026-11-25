@@ -143,6 +143,7 @@ resource "aws_sns_topic" "open_topic" {
 resource "aws_sns_topic_policy" "open_topic_policy" {
   arn = aws_sns_topic.open_topic.arn
 
+
   policy = jsonencode({
     Version = "2012-10-17"
     Statement = [{
