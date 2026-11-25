@@ -142,6 +142,7 @@ resource "aws_sns_topic" "open_topic" {
   # no kms_master_key_id -> unencrypted at rest
 }
 
+
 resource "aws_sns_topic_policy" "open_topic_policy" {
   arn = aws_sns_topic.open_topic.arn
 
