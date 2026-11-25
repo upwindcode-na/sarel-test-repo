@@ -10,3 +10,11 @@ provider "aws" {
   skip_requesting_account_id  = true
   skip_metadata_api_check     = true
 }
+
+# =========================
+# IaC: Public S3 bucket
+# =========================
+resource "aws_s3_bucket" "public_bucket" {
+  bucket = "my-very-insecure-bucket-123456"
+  aws_s3_bucket_acl    = "public-read"
+}
