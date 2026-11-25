@@ -132,6 +132,7 @@ resource "aws_cloudtrail" "no_logging" {
   include_global_service_events = false
 }
 
+
 # =========================
 # IaC: SNS topic without encryption + public access
 # =========================
